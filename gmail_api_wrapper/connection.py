@@ -72,8 +72,10 @@ class GoogleAPIConnection(object):
         Returns:
             Credentials, the obtained credential.
         """
-        home_dir = os.path.expanduser('~')
-        credential_dir = os.path.join(home_dir, '.credentials')
+        # home_dir = os.path.expanduser('~')
+        # credential_dir = os.path.join(home_dir, '.credentials')
+        credential_dir = "/home/xioahei/AIProjects/email-management-system/pullemails/"
+
         if not os.path.exists(credential_dir):
             os.makedirs(credential_dir)
         credential_path = os.path.join(
